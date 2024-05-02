@@ -24,14 +24,17 @@ searchButton.addEventListener("click", function () {
       console.log("Mail trovata!");
       const successSearch = "La tua mail è nella lista";
       searchResult.innerHTML = successSearch;
-    } else {
-      console.log("Mail trovata!");
+    }
+
+    if (inputMail !== mailAddresses[index]) {
+      console.log("Mail non trovata!");
       const failureSearch = "La tua mail non è nella lista";
       searchResult.innerHTML = failureSearch;
     }
   }
 });
 
+// Bottone di reset per cancellare la mai scritta nel campo di input
 resetButton.addEventListener("click", function () {
-  let inputMail = "";
+  document.getElementById("mail-input").value = "";
 });
