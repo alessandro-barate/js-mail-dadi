@@ -17,3 +17,13 @@ Consigli del giorno:
 
    Ricordate: il primo push dovrà essere un file README.md contenente la risoluzione degli esercizi in linguaggio naturale!
    Buon lavoro e buon divertimento!
+
+   1 - creo una variabile (userNumber)che genera 1 numero random da 1 a 6 (giocatore)
+   2 - creo una variabile (pcNumber) che genera 1 numero random da 1 a 6 (computer)
+   3 - creo un array con 6 numeri
+   4 - uso il contatore dell'array come termine di paragone:
+
+   - se userNumber == contatore e pcNumber == contatore --> pari
+   - se userNumber == contatore e pcNumber > contatore --> vince pc
+   - se userNumber == contatore e pcNumber < contatore --> vince
+     giocatore
