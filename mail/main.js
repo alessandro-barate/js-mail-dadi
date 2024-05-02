@@ -1,10 +1,6 @@
 "use strict";
 
 const searchButton = document.getElementById("search-button");
-searchButton.addEventListener("click", function () {
-  const inputMail = document.getElementById("mail-input").value;
-  //console.log(inputMail);
-});
 
 const mailAddresses = [
   "ale.barat@gmail.com",
@@ -18,6 +14,11 @@ const mailAddresses = [
 
 console.log(mailAddresses);
 
-if (mailAddresses === inputMail) {
-  console.log("Mail presente");
-}
+searchButton.addEventListener("click", function () {
+  const inputMail = document.getElementById("mail-input").value;
+  for (let index = 0; index < mailAddresses.length; index++) {
+    if (inputMail == mailAddresses[index]) {
+      console.log("Mail presente");
+    }
+  }
+});

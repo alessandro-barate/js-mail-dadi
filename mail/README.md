@@ -20,5 +20,5 @@ Consigli del giorno:
    1 - prompt o input field per mail
    2 - const inputMail
    3 - array con n mail (decido io di metterne quante ne voglio)
-   4 - if mailaddress === ad uno dei valori nell'array
+   4 - if inputMail == ad uno dei valori nell'array
    console.log(la mail trovata)
