@@ -3,6 +3,9 @@
 const searchButton = document.getElementById("search-button");
 const resetButton = document.getElementById("reset");
 
+let searchResult = document.getElementById("search-result");
+let currentText = searchResult.innerHTML;
+
 const mailAddresses = [
   "ale.barat@gmail.com",
   "alebarat@gmail.com",
@@ -17,8 +20,7 @@ console.log(mailAddresses);
 
 searchButton.addEventListener("click", function () {
   let inputMail = document.getElementById("mail-input").value;
-  let searchResult = document.getElementById("search-result");
-  let currentText = searchResult.innerHTML;
+
   for (let index = 0; index < mailAddresses.length; index++) {
     if (inputMail == mailAddresses[index]) {
       console.log("Mail trovata!");
@@ -26,15 +28,18 @@ searchButton.addEventListener("click", function () {
       searchResult.innerHTML = successSearch;
     }
 
-    if (inputMail !== mailAddresses[index]) {
+    /* if (inputMail != mailAddresses[index]) {
       console.log("Mail non trovata!");
       const failureSearch = "La tua mail non è nella lista";
       searchResult.innerHTML = failureSearch;
-    }
+    } */ //TOFIX: Se aggiungo questo mi stampa sempre il messaggio di
+    //failure a meno che la mail da cercare sia l'ultima
+    //dell'array */
   }
 });
 
-// Bottone di reset per cancellare la mai scritta nel campo di input
+// Bottone di reset per cancellare la mail scritta nel campo di input
 resetButton.addEventListener("click", function () {
   document.getElementById("mail-input").value = "";
+  searchResult.innerHTML = "";
 });

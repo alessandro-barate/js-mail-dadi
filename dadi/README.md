@@ -12,6 +12,8 @@ Consigli del giorno:
 3. si ma noi cosa vogliamo fare?
 4. torniamo a scrivere in italiano
 5. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo “a mano”
+
    Ricordate: non potete utilizzare metodi built-in (già disponibili) degli array.
+
    Ricordate: il primo push dovrà essere un file README.md contenente la risoluzione degli esercizi in linguaggio naturale!
    Buon lavoro e buon divertimento!
