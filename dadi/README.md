@@ -23,7 +23,7 @@ Consigli del giorno:
    3 - creo un array con 6 numeri
    4 - uso il contatore dell'array come termine di paragone:
 
-   - se userNumber == contatore e pcNumber == contatore --> pari
-   - se userNumber == contatore e pcNumber > contatore --> vince pc
-   - se userNumber == contatore e pcNumber < contatore --> vince
+   - se userNumber == contatore && pcNumber == contatore --> pari
+   - se userNumber == contatore && pcNumber > contatore --> vince pc
+   - se userNumber == contatore && pcNumber < contatore --> vince
      giocatore
