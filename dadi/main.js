@@ -11,5 +11,15 @@ console.log(numbersList);
 for (let counter = 0; counter < numbersList.length; counter++) {
   if (userNumber == numbersList[counter] && pcNumber == numbersList[counter]) {
     console.log("Pari");
+  } else if (
+    userNumber == numbersList[counter] &&
+    pcNumber < numbersList[counter]
+  ) {
+    console.log("Vince il giocatore");
+  } else if (
+    userNumber == numbersList[counter] &&
+    pcNumber > numbersList[counter]
+  ) {
+    console.log("Vince il computer");
   }
 }
