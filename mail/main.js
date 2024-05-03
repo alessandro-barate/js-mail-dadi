@@ -18,21 +18,25 @@ const mailAddresses = [
 
 console.log(mailAddresses);
 
+let canAccess = false;
+
 searchButton.addEventListener("click", function () {
   let inputMail = document.getElementById("mail-input").value;
 
   for (let index = 0; index < mailAddresses.length; index++) {
     if (inputMail == mailAddresses[index]) {
+      canAccess = true;
       console.log("Mail trovata!");
       const successSearch = "La tua mail è nella lista";
       searchResult.innerHTML = successSearch;
+      break;
     }
 
-    /* if (inputMail != mailAddresses[index]) {
+    if (inputMail != mailAddresses[index]) {
       console.log("Mail non trovata!");
       const failureSearch = "La tua mail non è nella lista";
       searchResult.innerHTML = failureSearch;
-    } */ //TOFIX: Se aggiungo questo mi stampa sempre il messaggio di
+    } //TOFIX: Se aggiungo questo mi stampa sempre il messaggio di
     //failure a meno che la mail da cercare sia l'ultima
     //dell'array */
   }
